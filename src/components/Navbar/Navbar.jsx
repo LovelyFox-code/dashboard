@@ -9,6 +9,8 @@ const Nav = styled.section`
   align-items: center;
   justify-content: space-between;
   padding: 3% 0;
+  width: 90%;
+  margin: auto;
 `;
 const Logo = styled.div`
   width: auto;
@@ -22,7 +24,7 @@ function Navbar() {
       </Logo>
       <Row>
         <ModeBtn>
-          <Input />
+          <Input/>
           <Label></Label>
         </ModeBtn>
       </Row>

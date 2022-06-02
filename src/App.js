@@ -1,11 +1,13 @@
 import "./App.css";
 import BigBox from "./components/BigBox/BigBox";
-import { Row } from "./components/Grid/Grid";
+import { Row, Div90 } from "./components/Grid/Grid";
 import Navbar from "./components/Navbar/Navbar";
 import SmallBox from "./components/SmallBox/SmallBox";
+import {H1} from "./components/Typography/Typography"
 import data from "./data/data.json";
 
 function App() {
+
   return (
     <div className="container">
       <Navbar />
@@ -43,7 +45,9 @@ function App() {
           fill={data[0].youtube.fill}
         />
       </Row>
-      <h1>Overview - Today</h1>
+      <Div90>
+      <H1>Overview - Today</H1>
+      </Div90>
       <Row>
         <SmallBox
           name={data[1].facebookView.name}
