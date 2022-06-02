@@ -45,54 +45,62 @@ function App() {
       </Row>
       <h1>Overview - Today</h1>
       <Row>
-      <SmallBox         
-          name = {data[1].facebookView.name}
-          number = {data[1].facebookView.number}
-          percentage ={data[1].facebookView.percentage}
+        <SmallBox
+          name={data[1].facebookView.name}
+          number={data[1].facebookView.number}
+          percentage={data[1].facebookView.percentage}
           icon={data[0].facebook.icon}
-          fill={data[0].facebook.fill}/>
-          <SmallBox         
-          name = {data[1].facebook.name}
-          number = {data[1].facebook.number}
-          percentage ={data[1].facebook.percentage}
+          fill={data[0].facebook.fill}
+        />
+        <SmallBox
+          name={data[1].facebook.name}
+          number={data[1].facebook.number}
+          percentage={data[1].facebook.percentage}
           icon={data[0].facebook.icon}
-          fill={data[0].facebook.fill}/>
-          <SmallBox         
-          name = {data[1].instagram.name}
-          number = {data[1].instagram.number}
-          percentage ={data[1].instagram.percentage}
+          fill={data[0].facebook.fill}
+        />
+        <SmallBox
+          name={data[1].instagram.name}
+          number={data[1].instagram.number}
+          percentage={data[1].instagram.percentage}
           icon={data[0].instagram.icon}
-          fill={data[0].instagram.fill}/>
-          <SmallBox         
-          name = {data[1].instagramView.name}
-          number = {data[1].instagramView.number}
-          percentage ={data[1].instagramView.percentage}
+          fill={data[0].instagram.fill}
+        />
+        <SmallBox
+          name={data[1].instagramView.name}
+          number={data[1].instagramView.number}
+          percentage={data[1].instagramView.percentage}
           icon={data[0].instagram.icon}
-          fill={data[0].instagram.fill}/>
-          <SmallBox         
-          name = {data[1].twitterView.name}
-          number = {data[1].twitterView.number}
-          percentage ={data[1].twitterView.percentage}
+          fill={data[0].instagram.fill}
+        />
+        <SmallBox
+          name={data[1].twitterView.name}
+          number={data[1].twitterView.number}
+          percentage={data[1].twitterView.percentage}
           icon={data[0].twitter.icon}
-          fill={data[0].twitter.fill}/>
-          <SmallBox         
-          name = {data[1].twitter.name}
-          number = {data[1].twitter.number}
-          percentage ={data[1].twitter.percentage}
+          fill={data[0].twitter.fill}
+        />
+        <SmallBox
+          name={data[1].twitter.name}
+          number={data[1].twitter.number}
+          percentage={data[1].twitter.percentage}
           icon={data[0].twitter.icon}
-          fill={data[0].twitter.fill}/>
-          <SmallBox         
-          name = {data[1].youtube.name}
-          number = {data[1].youtube.number}
-          percentage ={data[1].youtube.percentage}
+          fill={data[0].twitter.fill}
+        />
+        <SmallBox
+          name={data[1].youtube.name}
+          number={data[1].youtube.number}
+          percentage={data[1].youtube.percentage}
           icon={data[0].youtube.icon}
-          fill={data[0].youtube.fill}/>
-          <SmallBox         
-          name = {data[1].youtubeView.name}
-          number = {data[1].youtubeView.number}
-          percentage ={data[1].youtubeView.percentage}
+          fill={data[0].youtube.fill}
+        />
+        <SmallBox
+          name={data[1].youtubeView.name}
+          number={data[1].youtubeView.number}
+          percentage={data[1].youtubeView.percentage}
           icon={data[0].youtube.icon}
-          fill={data[0].youtube.fill}/>
+          fill={data[0].youtube.fill}
+        />
       </Row>
     </div>
   );
