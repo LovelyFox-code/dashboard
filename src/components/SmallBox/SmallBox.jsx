@@ -1,12 +1,19 @@
 import React from 'react';
-import style from './SmallBox.module.css';
+import styled from 'styled-components';
+import { Row, RowSpaceBetween } from '../Grid/Grid';
+import { P, H1 } from '../Typography/Typography';
+
+const Box = styled.div`
+    width: 255px;
+    padding: 24px 18px;
+    background: #252B42;
+`
 
 function SmallBox(props) {
-    console.log(props.percentage);
     return (
-        <div className={style.box}>
-            <div className={style.row}>
-                <p>{props.name}</p>
+        <Box>
+            <RowSpaceBetween>
+                <P>{props.name}</P>
                 <svg
                     width="20"
                     height="20"
@@ -20,10 +27,10 @@ function SmallBox(props) {
                         fill={props.fill}
                     />
                 </svg>
-            </div>
-            <div className={style.row}>
-            <h1>{props.number}</h1>
-                <div className={style.percentage}>
+            </RowSpaceBetween>
+            <RowSpaceBetween>
+            <H1>{props.number}</H1>
+                <Row smallGap>
                     <svg
                         width="8"
                         height="4"
@@ -41,10 +48,10 @@ function SmallBox(props) {
                     </svg>
 
                     
-                    <p>{props.percentage}%</p>
-                </div>
-            </div>
-        </div>
+                    <P>{props.percentage}%</P>
+                </Row>
+            </RowSpaceBetween>
+        </Box>
 
     )
 }
