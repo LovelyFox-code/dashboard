@@ -1,48 +1,51 @@
 import "./App.css";
 import BigBox from "./components/BigBox/BigBox";
-import { Row, Div90 } from "./components/Grid/Grid";
+import { Row, Div90, Container } from "./components/Grid/Grid";
 import Navbar from "./components/Navbar/Navbar";
 import SmallBox from "./components/SmallBox/SmallBox";
 import {H1} from "./components/Typography/Typography"
 import data from "./data/data.json";
 
 function App() {
-
+  const facebook = data[0].facebook;
+  const twitter = data[0].twitter;
+  const instagram = data[0].instagram;
+  const youtube = data[0].youtube;
   return (
-    <div className="container">
+    <Container>
       <Navbar />
       <Row>
         <BigBox
-          platform={data[0].facebook}
-          user={data[0].facebook.user}
-          followers={data[0].facebook.followers}
-          changeToday={data[0].facebook.num}
-          icon={data[0].facebook.icon}
-          fill={data[0].facebook.fill}
+          platform={facebook}
+          user={facebook.user}
+          followers={facebook.followers}
+          changeToday={facebook.num}
+          icon={facebook.icon}
+          fill={facebook.fill}
         />
         <BigBox
-          platform={data[0].twitter}
-          user={data[0].twitter.user}
-          followers={data[0].twitter.followers}
-          changeToday={data[0].twitter.num}
-          icon={data[0].twitter.icon}
-          fill={data[0].twitter.fill}
+          platform={twitter}
+          user={twitter.user}
+          followers={twitter.followers}
+          changeToday={twitter.num}
+          icon={twitter.icon}
+          fill={twitter.fill}
         />
         <BigBox
-          platform={data[0].instagram}
-          user={data[0].instagram.user}
-          followers={data[0].instagram.followers}
-          changeToday={data[0].instagram.num}
-          icon={data[0].instagram.icon}
-          fill={data[0].instagram.fill}
+          platform={instagram}
+          user={instagram.user}
+          followers={instagram.followers}
+          changeToday={instagram.num}
+          icon={instagram.icon}
+          fill={instagram.fill}
         />
         <BigBox
-          platform={data[0].youtube}
-          user={data[0].youtube.user}
-          followers={data[0].youtube.followers}
-          changeToday={data[0].youtube.num}
-          icon={data[0].youtube.icon}
-          fill={data[0].youtube.fill}
+          platform={youtube}
+          user={youtube.user}
+          followers={youtube.followers}
+          changeToday={youtube.num}
+          icon={youtube.icon}
+          fill={youtube.fill}
         />
       </Row>
       <Div90>
@@ -50,63 +53,63 @@ function App() {
       </Div90>
       <Row>
         <SmallBox
-          name={data[1].facebookView.name}
-          number={data[1].facebookView.number}
-          percentage={data[1].facebookView.percentage}
-          icon={data[0].facebook.icon}
-          fill={data[0].facebook.fill}
+          name={facebook.viewName}
+          number={facebook.viewNumber}
+          percentage={facebook.viewPercentage}
+          icon={facebook.icon}
+          fill={facebook.fill}
         />
         <SmallBox
-          name={data[1].facebook.name}
-          number={data[1].facebook.number}
-          percentage={data[1].facebook.percentage}
-          icon={data[0].facebook.icon}
-          fill={data[0].facebook.fill}
+          name={facebook.name}
+          number={facebook.number}
+          percentage={facebook.percentage}
+          icon={facebook.icon}
+          fill={facebook.fill}
         />
         <SmallBox
-          name={data[1].instagram.name}
-          number={data[1].instagram.number}
-          percentage={data[1].instagram.percentage}
-          icon={data[0].instagram.icon}
-          fill={data[0].instagram.fill}
+          name={instagram.name}
+          number={instagram.number}
+          percentage={instagram.percentage}
+          icon={instagram.icon}
+          fill={instagram.fill}
         />
         <SmallBox
-          name={data[1].instagramView.name}
-          number={data[1].instagramView.number}
-          percentage={data[1].instagramView.percentage}
-          icon={data[0].instagram.icon}
-          fill={data[0].instagram.fill}
+          name={instagram.viewName}
+          number={instagram.viewNumber}
+          percentage={instagram.viewPercentage}
+          icon={instagram.icon}
+          fill={instagram.fill}
         />
         <SmallBox
-          name={data[1].twitterView.name}
-          number={data[1].twitterView.number}
-          percentage={data[1].twitterView.percentage}
-          icon={data[0].twitter.icon}
-          fill={data[0].twitter.fill}
+          name={twitter.viewName}
+          number={twitter.viewNumber}
+          percentage={twitter.viewPercentage}
+          icon={twitter.icon}
+          fill={twitter.fill}
         />
         <SmallBox
-          name={data[1].twitter.name}
-          number={data[1].twitter.number}
-          percentage={data[1].twitter.percentage}
-          icon={data[0].twitter.icon}
-          fill={data[0].twitter.fill}
+          name={twitter.name}
+          number={twitter.number}
+          percentage={twitter.percentage}
+          icon={twitter.icon}
+          fill={twitter.fill}
         />
         <SmallBox
-          name={data[1].youtube.name}
-          number={data[1].youtube.number}
-          percentage={data[1].youtube.percentage}
-          icon={data[0].youtube.icon}
-          fill={data[0].youtube.fill}
+          name={youtube.name}
+          number={youtube.number}
+          percentage={youtube.percentage}
+          icon={youtube.icon}
+          fill={youtube.fill}
         />
         <SmallBox
-          name={data[1].youtubeView.name}
-          number={data[1].youtubeView.number}
-          percentage={data[1].youtubeView.percentage}
-          icon={data[0].youtube.icon}
-          fill={data[0].youtube.fill}
+          name={youtube.viewName}
+          number={youtube.viewNumber}
+          percentage={youtube.viewPercentage}
+          icon={youtube.icon}
+          fill={youtube.fill}
         />
       </Row>
-    </div>
+    </Container>
   );
 }
 
