@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+  max-width: 1260px;
+  width: 90%;
+  margin: auto;
+`
 export const Section = styled.section`
   width: 90%;
   max-width: 1110px;

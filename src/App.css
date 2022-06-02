@@ -5,14 +5,3 @@ body{
   background: #20222F;
   color: white;
 }
-.container{
-  max-width: 1260px;
-  width: 90%;
-  margin: auto;
-}
-.boxContainer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin: 25px 0;
-}
